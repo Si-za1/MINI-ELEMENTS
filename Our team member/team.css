@@ -1,0 +1,64 @@
+@import"https://fonts.google.com/specimen/Josefin+Sans";
+
+*{
+    margin :0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif ;
+    background:linear-gradient(lightblue,lightsalmon,lightcoral);
+}
+.wrapper{
+    margin-top: 10%;
+
+}
+.wrapper h2{
+    font-family: Forte;
+    font-size: 42px;
+    margin-bottom: 60px;
+    text-align:center;
+}
+.team{
+    display: flex;
+    text-align:center;
+    width:auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team .team_member{
+    background:lightslategray;
+    box-shadow: 0 0 4px 4px black;
+    margin: 5px;
+    margin-bottom: 50px;
+    width:320px;
+    padding:30px;
+    color:purple;
+    position: relative;
+}
+.team .team_member h3{
+    font-size:20px;
+    padding:12px;
+    margin-top: 30px;
+}
+.team .team_member p.role{
+    font-size: larger;
+    text-transform: uppercase;
+    margin:0px 12px;
+}
+.team .team_member .image {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left:50%;
+    transform: translateX(-50%);
+    background: #ffff;
+}
+
+.team .team_member .image img {
+    width:100px;
+    height:100px;
+   
+}

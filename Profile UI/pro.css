@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+html,body{
+    display: grid;
+    height:100%;
+    place-items:center;
+    text-align:center;
+    background:lightgoldenrodyellow;
+}
+h1{
+    font-size:50px;
+    font-weight:800px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    height:290px;
+    width:250px;
+    margin:0px 40px;
+    background: white;
+    transition: 0.4s;
+    box-shadow:2px 2px 2px 5px rgb(139, 97, 97,0.25);
+}
+.card:hover{
+    height:540px;
+    box-shadow:2px 2px 12px 5px rgb(139, 97, 97,0.25);
+}
+.card .image{
+    height: 200px;
+    width:100%;;
+}
+.card .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.card .name{
+    font-size:22px;
+    font-weight:400px;
+    color:black;
+    margin-top:20px;
+}
+.card .name p{
+    font-size:4px;
+    font-weight:400px;
+    padding:10px;
+    margin-top:20px;
+}
+.card .text{
+    font-size:18px;
+    font-weight:200px;
+    margin-top:50px;
+}
+.card .bottom-text {
+    padding: 0 20px 10px 20px;
+    margin-top:80px;
+    opacity:0;
+    visibility: hidden;
+    transition:0.1s;
+}
+.card:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+
+} 
+.card .bottom-text .button{
+    margin:2px;
+    text-align: center;
+    padding-top:12px;
+}
+.card .bottom-text .button a{
+    text-decoration:none;
+    padding: 9px 12px;
+    color:white;
+    background: crimson;
+    border-radius:4px;
+    display:inline-flex;
+    transition: 0.5s;
+}
+.card .bottom-text .button a:hover{
+    transform: scale(0.9);
+}
